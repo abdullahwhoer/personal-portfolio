@@ -121,6 +121,8 @@ body {
 
 .img-container {
     position: relative;
+    background-color: white;
+    border-radius: 50%;
 }
 
 .img {
@@ -130,12 +132,13 @@ body {
     overflow: hidden;
     border: 5px solid var(--secondary_color);
     box-shadow: 0 6px 30px var(--secondary_color);
-    background: linear-gradient(45deg, var(--secondary_color), transparent);
+    /* background: linear-gradient(45deg, var(--secondary_color), transparent); */
+    /* background-color: white; */
 }
 
 .img>img {
     width: 250px;
-
+    /* background-color: white; */
     height: 390px;
     object-fit: cover;
     filter: drop-shadow(0 4px 16px hsla(0, 0%, 0%, .2));
