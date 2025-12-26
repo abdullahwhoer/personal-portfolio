@@ -137,7 +137,7 @@ body {
 }
 
 .img>img {
-    width: 250px;
+    width: 80%;
     /* background-color: white; */
     height: 390px;
     object-fit: cover;
