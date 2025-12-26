@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio website</title>
+    <title>Kai Marx - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="nav">
-            <div class="logo">Abdullah's logo</div>
+            <div class="logo">Kai</div>
             <ul class="menu-items">
-                <li><a href="#" active>Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Resume</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
     <main>
@@ -28,28 +31,32 @@
                     <div class="s-icon i2"><i class="fa-brands fa-github"></i></div>
                     <div class="s-icon i3"><i class="fa-brands fa-facebook"></i></div>
                 </div>
-                <div class="img">
-                    <img src="./media/a1.png" alt="">
+                <div class="img-container">
+                    <div class="img">
+                        <img src="./media/a1.png" alt="Kai Marx">
+                    </div>
                 </div>
             </div>
 
             <div class="right-hero">
                 <div class="content">
                     <div class="animated-text">
-                        <p>Hey I'm <span></span></p>
+                        <p>Hi I'm a <span></span></p>
                     </div>
-                    <h1>ABDULLAH SAQIB</h1>
-                    <p class="prsnl-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                      <div class="btns">
+                    <h1>KAI MARX</h1>
+                    <p class="prsnl-desc">
+                        Web developer and designer based in Lima, Peru, 
+                        specializing in creating websites for businesses. 
+                        See my portfolio which includes modern websites, designs, and more.
+                    </p>
+                    <div class="btns">
                         <button class="dwnld-cv">Download CV</button>
-                        <button class="btn-prjct">Projects</button>
-                      </div>
+                        <button class="btn-prjct">See Projects</button>
+                    </div>
                 </div>
             </div>
-
-
-
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
