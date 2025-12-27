@@ -97,6 +97,7 @@ body {
     overflow: hidden;
     border: 5px solid var(--secondary_color);
     box-shadow: 0 6px 30px var(--secondary_color);
+    /* transition: all 0.43 ease; */
 }
 
 .img>img {
@@ -295,6 +296,7 @@ ion-icon {
         justify-content: space-between;
         align-items:center;
         height: 100%;
+        margin-bottom: 100px;
         /* height: 100vh; */
     }
 
@@ -318,6 +320,7 @@ ion-icon {
 
     .img {
         margin-left: 40px;
+        
     }
 
     .right-hero {
@@ -394,27 +397,30 @@ ion-icon {
         .menu-items li {
             margin-bottom: 8px;
         }
-    }
 
+    /* mobile-only: toggle helpers and hide/show behavior */
     .menu-icon {
-        display: block;
+        display: block !important; /* ensure mobile shows hamburger even if a global rule exists */
         cursor: pointer;
     }
+
     .close-icon {
         display: none;
         cursor: pointer;
     }
 
-    /* hide menu by default */
+    /* hide menu by default on mobile */
     .menu-items {
         transform: translateY(-120%);
         transition: transform 0.4s ease;
-}
+    }
 
-/* when menu is active */
+    /* when menu is active on mobile */
     .menu-items.active {
         transform: translateY(0);
+    }
 }
+
 
 .menu-icon,
 .close-icon {
@@ -422,9 +428,9 @@ ion-icon {
     padding-right: 30px;
 }
 
-/* show hamburger by default */
+/* hide hamburger on desktop (only show on mobile) */
 .menu-icon {
-    display: block;
+    display: none;
 }
 
 /* hide close icon by default */
@@ -456,3 +462,4 @@ ion-icon {
     .menu-items {
         z-index: 120;
     }
+
