@@ -213,6 +213,8 @@ body {
     color: var(--secondary_color);
 }
 
+
+
 .animated-text span::before {
     content: "Web Developer";
     animation: words 20s infinite;
@@ -315,6 +317,11 @@ body {
     .nav {
         padding: 0 20px;
     }
+
+    .animated-text p {
+    border: 2px solid red;
+    padding: 0 40px;
+}
     
     .menu-items {
         display: none;
