@@ -12,6 +12,10 @@
     --main_font-family: "Poppins", sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--bg-color);
     color: white;
@@ -330,14 +334,29 @@ body {
 
     .animated-text p {
     border: 2px solid red;
-    padding: 0 40px;
+    padding: 0 10px;
     justify-content: center; /* Add this line */
         min-height: 50px; /* Add this line */;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;   /* 🔥 keeps text on one line */
+        overflow: hidden;      /* 🔥 stops scrollbar */
+        font-size: 20px;
 } 
-     
-     .animated-text span {
-        min-width: 160px; /* Add this line */
+
+    .animated-text span {
+        white-space: nowrap;   /* 🔥 critical */
+        display: inline-block;
     }
+
+    .animated-text span::after {
+        width: 100%;
+    }
+     
+     /* .animated-text span {
+        min-width: 160px; /* Add this line }*/
+    
     
     .menu-items {
         display: none;
