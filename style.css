@@ -209,8 +209,14 @@ body {
 
 /* Animated Text */
 .animated-text span {
-    position: relative;
-    color: var(--secondary_color);
+  position: relative;
+  color: var(--secondary_color);
+  /* Prevent the typing text from wrapping onto multiple lines */
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+  vertical-align: bottom;
 }
 
 
@@ -224,7 +230,9 @@ body {
     content: "";
     position: absolute;
     width: calc(100% + 8px);
-    height: 100%;
+    /* limit the mask/cursor height to one line so it can't cover the heading below */
+    height: 1em;
+    top: 0;
     background-color: var(--bg-color);
     border-left: 2px solid var(--secondary_color);
     right: -8px;
