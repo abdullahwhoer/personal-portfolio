@@ -211,13 +211,23 @@ body {
 .animated-text span {
     position: relative;
     color: var(--secondary_color);
+    display: inline-block; /* Add this line */
+    min-width: 180px; /* Add this line */
 }
 
+.animated-text p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    min-height: 60px; /* Add this line */
+    display: flex; /* Add this line */
+    align-items: center; /* Add this line */}
 
 
 .animated-text span::before {
     content: "Web Developer";
     animation: words 20s infinite;
+    white-space: nowrap; /* Add this line */
 }
 
 .animated-text span::after {
@@ -321,7 +331,13 @@ body {
     .animated-text p {
     border: 2px solid red;
     padding: 0 40px;
-}
+    justify-content: center; /* Add this line */
+        min-height: 50px; /* Add this line */;
+} 
+     
+     .animated-text span {
+        min-width: 160px; /* Add this line */
+    }
     
     .menu-items {
         display: none;
