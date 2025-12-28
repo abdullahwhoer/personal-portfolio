@@ -220,7 +220,7 @@ body {
 
 .animated-text span {
     position: relative;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     
 }
 
