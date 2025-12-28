@@ -172,6 +172,7 @@ body {
     font-family: var(--main_font-family);
 }
 
+
 .btns {
     display: flex;
     justify-content: center;
